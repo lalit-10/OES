@@ -112,6 +112,8 @@ public class Admin extends javax.swing.JFrame {
 
             if(password.compareTo(adminPassword) == 0) {
                 JOptionPane.showMessageDialog(null,"Login Successful");
+                new AdminHomePage().setVisible(true);
+                this.dispose();
             }
             else {
                 JOptionPane.showMessageDialog(null,"Invalid Password");
