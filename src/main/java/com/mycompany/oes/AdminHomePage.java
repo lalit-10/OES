@@ -520,6 +520,14 @@ public class AdminHomePage extends JFrame {
         jTextField3.setText("");
         jTextField4.setText("");
         buttonGroup.clearSelection();
+
+        if(questionCounter > 10) {
+            questionCounter = 1;
+            examName = null;
+            jPanel3.setVisible(false);
+            jPanel1.setVisible(true);
+            return;
+        }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     public static void main(String[] args) {
